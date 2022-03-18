@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+<form action="#">
+	<div>
+		<label for="l-email">Email</label>
+			<input type="email" id="l-email" name="email">
+		<label for="l-password">Password</label>
+			<input type="password" id="l-password" name="password">
+	</div>
+	<div>
+		<label for="l-name-surname">Nome e Cognome</label>
+			<input type="text" id="l-name-surname" name="name-surname">
+		<label for="ldate">Data di Nascita</label>
+			<input type="date" id="l-date" name="date">
+		<label for="lt-elephone">Telefono</label>
+			<input type="number" id="l-telephone" name="telephone">
+	</div>
+	<div>
+		<label for="l-subscription">Prezzi abbonamento</label>
+			<select name="plan" id="l-plan">
+				<option value="0">Free</option>
+			<optgroup label="Monthly">
+				<option value="299">2,99€</option>
+				<option value="399">3,99€</option>
+				<option value="499">4,99€</option>
+			</optgroup>
+		</select>
+	</div>
+	<div>
+		<label for="l-pro">Vantaggi PRO</label>
+			<input type="checkbox">
+	</div>
+	<div>
+		<label for="l-cc">Numero di Credito</label>
+			<input type="text" id="lcc" name="card" placeholder="carta di credito">
+		<label for="l-cvc">CVC</label>
+			<input type="text" id="l-cvc" name="cvc" placeholder="CVC" >
+		<label for="l-expiration">Scadenza</label>
+			<input type="date" id="l-expiration" name="expiration" >
+		<label for="l-address">Indirizzo di Fatturazione</label>
+			<input type="text" id="l-address" name="address" placeholder="Indirizzo">
+	</div>
+
+		<button type="submit">Registrati</button>
+
+</form>
+</body>
+
+</html>
